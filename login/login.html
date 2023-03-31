@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/x-icon" href="../assets/logo lava jato 6.jpeg">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-cadastro">
+        <div class="card-cadastro">
+            <div class="alinhar-elementos">
+                <h1>LOGIN</h1>
+                <form action="">
+                    <input type="text" placeholder="Usuário:"> <br>
+                    <input type="password" id="pass" placeholder="Senha:"> <br>
+                    <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho">
+                    <br>
+                    <button onclick="fazerLogin(); return false;">LOGAR</button>
+                    <div class="criar-conta"><p>Criar uma conta?</p> <a href="../cadastrar cliente/cadastro.html">Clique aqui!</a></div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+
+function fazerLogin(){
+    alert("Login realizado com sucesso!");
+    location.href = "../posLogin/posLogin.html";
+}
+document.getElementById('olho').addEventListener('mousedown', function() {
+  document.getElementById('pass').type = 'text';
+});
+
+document.getElementById('olho').addEventListener('mouseup', function() {
+  document.getElementById('pass').type = 'password';
+});
+
+// Para que o password não fique exposto apos mover a imagem.
+document.getElementById('olho').addEventListener('mousemove', function() {
+  document.getElementById('pass').type = 'password';
+});
+    </script>
+</body>
+</html>

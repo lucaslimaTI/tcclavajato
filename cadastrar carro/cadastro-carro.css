@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(-45deg, #230c4d, #9055ff);
+}
+.container-cadastro{
+    height: 100%;
+    background-color: #230c4d00;
+}
+.card-cadastro{
+    margin-top: 75px;
+    margin-left: 30vw;
+    background: linear-gradient(to bottom, #ffffff, rgb(255, 255, 255));
+    width: 34vw;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-right: 88px;
+    display: inline-block;
+    border-radius: 34px;
+    margin-bottom: 100px;
+}
+.alinhar-elementos input{
+    margin-bottom: 6px;
+    padding: 19px;
+    width: 100%;
+    border-radius: 50px;
+    outline: none;
+    border: 0;
+    border: 1px solid #9055ff;
+    box-sizing: border-box;
+
+}
+.alinhar-elementos button{
+    margin-top: 15px;
+    margin-left: 7.2vw;
+    width: 20vw;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid #777777;
+    border-radius: 40px;
+    color: #777777;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.alinhar-elementos button:hover{
+    transition: 0.5s;
+    background-color: #fff;
+    color: #9055ff;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px #272727a9;
+    border: 1px solid #9055ff;
+
+}
+
+.alinhar-elementos h1{
+    padding-bottom: 15px;
+    color: #242424;
+    text-align: center;
+}
+.style-label{
+    display: block;
+    margin-top: 24px;
+    color: rgb(31, 31, 31);
+
+}
+@media(max-width: 1245px)
+{
+    .alinhar-elementos h1{
+    font-size: 25px;
+    }
+}
+@media(max-width: 1040px)
+{
+    .alinhar-elementos h1{
+        font-size: 20px;
+        }
+}
+@media(max-width: 890px)
+{
+    .alinhar-elementos button{
+       
+        font-size: 10px;
+        
+    }
+    .alinhar-elementos h1{
+        font-size: 18px;
+    }
+    .card-cadastro{
+        width: 65vw;
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        margin-left: 10vw;
+    }
+    .alinhar-elementos button{
+        
+        width: 200px;
+        margin-left: 29%;     
+    }
+    .seta{
+        display: none;
+    }
+}
+@media(max-width: 587px)
+{
+    .alinhar-elementos h1{
+        font-size: 15px;
+    }
+    .alinhar-elementos button{
+        font-size: 9px;
+        width: 150px;
+        margin-left: 80px;     
+    }
+    
+    .card-cadastro{
+        width: 65vw;
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        margin-left: 10vw;
+    }
+    
+}
+@media(max-width: 450px)
+{
+    .card-cadastro{
+        width: 65vw;
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        margin-left: 10vw;
+    }
+    .alinhar-elementos button{
+        font-size: 7px;
+        width: 150px;
+        margin-left: 18%;     
+    }
+}
+@media(max-width: 350px)
+{
+    .alinhar-elementos button{
+        
+        width: 150px;
+        margin-left: 18%;     
+    }
+    .alinhar-elementos input{
+    padding: 14px;
+    }
+}
+@media(max-width: 300px)
+{
+    .alinhar-elementos button{
+        
+        width: 110px;
+        margin-left: 10vw;     
+    }
+    .card-cadastro{
+        width: 68vw;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        margin-left: 10vw;
+    }
+}
+@media(max-width: 150px)
+{
+    .alinhar-elementos button{
+        
+        width: 80px;
+        padding: 7px;
+        margin-left: 1vw;     
+    }
+    .alinhar-elementos h1{
+        font-size: 8px;
+    }
+}

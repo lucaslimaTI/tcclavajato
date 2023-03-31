@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="solcitar-servico.css">
+    <link rel="icon" type="image/x-icon" href="../assets/logo lava jato 6.jpeg">
+    <title>LavaJato Solicitar serviço</title>
+</head>
+<style>
+    .datetime-agenda{
+margin-top: 30px;
+}
+.datetime-agenda input{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 7px 10px #2b2b2ba1;
+    outline: none;
+    margin-left: 10px;
+    color: #3a3a3a;
+    font-weight: 500;
+    font-size: 14px;
+}
+</style>
+<body>
+    
+    <header id="home">
+        <nav>
+            <a class="logo" href="../posLogin/posLogin.html"><img src="../assets/logo lava jato 7.jpeg" class="logo-lj" alt=""></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="../posLogin/posLogin.html" >Home</a></li>
+                <li><a href="../posLogin/posLogin.html">Serviços</a></li>
+                <li><a href="#" onclick="sobreNos();">Sobre</a></li>
+                <li><a href="../index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container2">
+            <div class="titulo-servicos">
+                <h2 class="nossos-servicos">Marque nas caixinhas abaixo os serviços que deseja:</h2>
+                <div class="servicos">
+
+                    <div class="secao-checkbox">
+                        <div  class="style-input">
+                            <input type="checkbox" onclick="checarServicos();" name=", + COD:1 - Polimento do farol (R$150,00)</br>" id="servico1" class="large-checkbox" class="check" value="150.00">
+                            <label for="servico1">Polimento do farol - R$150,00</label>
+                        </div>
+                        <div class="style-input">
+                            <input type="checkbox" onclick="checarServicos();" name=" + COD:2 - Higienização interna (R$150,00)</br>" id="servico2" class="large-checkbox" class="check" value="150.00">
+                            <label for="servico2">Higienização interna - R$150,00</label>
+                        </div>
+                        <div class="style-input">
+                            <input type="checkbox" onclick="checarServicos();" name=" + COD:3 - Limpeza e hidratação do couro (R$280,00)</br>" id="servico3" class="large-checkbox" class="check" value="280.00">
+                            <label for="servico3">Limpeza e hidratação do couro - R$280,00</label>
+                        </div>
+                        <div class="style-input">
+                            <input type="checkbox" onclick="checarServicos();" name=" + COD:4 - Limpeza técnica no motor (R$360,00)</br>" id="servico4" class="large-checkbox" class="check" value="360.00">
+                            <label for="servico4">Limpeza técnica no motor - R$360,00</label>
+                        </div>
+                        <div class="style-input">
+                            <input type="checkbox" onclick="checarServicos();" name=" + COD:5 - Cristalização dos vidros (R$120,00)</br>" id="servico5" class="large-checkbox" class="check" value="120.00">
+                            <label for="servico5">Cristalização dos vidros - R$120,00</label>
+                        </div>
+                        <div class="style-input">
+                            <input type="checkbox" onclick="checarServicos();" name=" + COD:6 - Higienização do ar condicionado (R$440,00)</br>" id="servico6" class="large-checkbox" class="check" value="440.00">
+                            <label for="servico6">Higienização do ar condicionado - R$440,00</label>
+                        </div>
+                        <div class="datetime-agenda">
+                            <label for="servico6">Escolha uma data e um horario:</label>
+                            <input type="datetime-local" class="data-agendar" min="2023-03-27T07:00:00" max="2023-04-01T17:00:00" name="" id="" required> <br>
+                        </div>
+                        <input type="text" disabled name="" id="result" class="valor-total" value="VALOR TOTAL A PAGAR: R$"> <br>
+                        <input type="number" name="" id="result2"> <br>
+                        <div id="qtd_serv" class="desc-serv">QUANTIDADE SELECIONADOS: </div>
+                        <div id="res_servicos" class="desc-serv">SERVIÇOS ESCOLHIDOS: </div>
+                        <div type="text" id="res_servicos2"></div>
+                    </div>
+                        <fieldset class="forma-pagamentos">
+                            <legend><h3>Escolha a forma de pagamento</h3></legend>
+                            <button onclick="div_qrcode();">Pagamento a vista com 10% de desconto no pix</button> <br>
+                            <button onclick="pagmt_debito();">Pagamento no cartao de debito com taxa de 4%</button> <br>
+                            <button onclick="pagmt_credito();">Pagamento no cartao de credito com taxa de 4%</button> <br>
+                            <div class="qr-code" id="qrcode"></div>
+                        </fildset>
+                    <div class="mangueira2">                    
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="img-bolhas2">
+            <img src="assets/bolhas2 bg.png" alt="" class="img-bolhas">
+            </div>
+          <div class="container3">
+            
+            <h1>GARANTIMOS</h1>
+            
+            <div class="container4">
+                <div>
+                    <img src="../assets/confianca3 bg.png" alt="">
+                    <h3>CONFIANÇA</h3>
+                </div>
+                <div>
+                    <img src="../assets/diamantebg1.png" alt="">
+                    <h3>QUALIDADE</h3>
+                </div>
+                <div>
+                    <img src="../assets/atendimentobg1.png" alt="" class="atendimento">
+                    <h3>ÓTIMO ATENDIMENTO</h3>
+                </div>
+            </div>
+          </div>
+          <svg viewBox="0 12 500 100" class="onda2">
+            <path d="M0, 100 C150, 150 350, 0 550, 100 L500, 00 L0, 0 Z"></path>
+          </svg>
+          <div class="container5">
+            <div class="feedback">
+                <h1>Feedback</h1>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Deixe seu comentario aqui:"></textarea>
+                <br>
+                <button class="" onclick="enviarFeedback();" >ENVIAR</button>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="alinha-footer">
+                <ul class="lista-footer">
+                    <li>LavaJato Água ZERO</li>
+                    <a href="../posLogin/posLogin.html"><li>Home</li></a>
+                    <a href="../posLogin/posLogin.html" ><li>Serviços</li></a>
+                    <a href="#" onclick="sobreNos();"><li>Sobre</li></a>
+                    <br>
+                    <li>Local</li>
+                    <li>- Araxa-MG</li>
+                    <li>- CEP:111111-11</li>
+                    <li>- Bairro: Carmezin das Flores - Rua Carvalho de Moraes Nº 777-B</li>
+                </ul>
+            </div>
+            <div>
+
+            </div>
+            
+          </div>
+    </main>
+
+    <script src="solicitar-servico.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="mobile-navbar.js"></script>
+    <script>
+          //FUNÇÃO PARA CONTAR OS CHECKBOX SELECIONADOS
+        $('input[type=checkbox]').on('change', function () {
+            var total = $('input[type=checkbox]:checked').length;
+            document.querySelector('#qtd_serv').innerHTML = ('QUANTIDADE SELECIONADOS: ' + total + ' <br>');
+        });
+        function pagmt_debito(){
+            //PEGANDO VALORES DE TAGS DO HTML
+            var serv_escolhidos = document.getElementById('res_servicos2').innerHTML;
+            var valorTotal_servicos = document.getElementById('result2').value;
+            var qtd_serv_escolh = document.getElementById('qtd_serv').innerHTML;
+
+            //JOGANDO ESSES VALORES PARA O LOCALSTORAGE DO USUARIO
+            localStorage.setItem('servicosEscolhidos', serv_escolhidos);
+            localStorage.setItem('valorTotal', valorTotal_servicos);
+            localStorage.setItem('qtdEscolhidos', qtd_serv_escolh);
+            location.href = "../Pagamento com o cartao/pagamento-debito.html";
+        }
+
+        function pagmt_credito(){
+            //PEGANDO VALORES DE TAGS DO HTML
+            var serv_escolhidos = document.getElementById('res_servicos2').innerHTML;
+            var valorTotal_servicos = document.getElementById('result2').value;
+            var qtd_serv_escolh = document.getElementById('qtd_serv').innerHTML;
+
+            //JOGANDO ESSES VALORES PARA O LOCALSTORAGE DO USUARIO
+            localStorage.setItem('valorTotal', valorTotal_servicos);
+            localStorage.setItem('servicosEscolhidos', serv_escolhidos);
+            localStorage.setItem('qtdEscolhidos', qtd_serv_escolh);
+            location.href = "../Pagamento com o cartao/pagamento-credito.html";
+        }
+
+        function sobreNos(){
+            alert("Esta seção esta em manuntençao! Tente novamente mais tarde");
+        }
+
+        function enviarFeedback()
+        {
+            alert("Comentario enviado com sucesso!");
+            location.href = "#home"
+        }
+
+        function div_qrcode(){
+
+            var num_random = Math.random()* (33333333333333333333, 22222222222222222222);            document.getElementById("qrcode").style.visibility = "visible";
+            document.getElementById("qrcode").innerHTML = ("QR CODE: " + num_random);
+
+        }
+
+        function somar(){
+  var result = $("input:checked");
+  var total = 0;
+
+  for (var i=0; i<result.length; i++)
+  {
+    total = total + parseFloat(result[i].value);
+  }
+  
+  $("#result").val('VALOR TOTAL A PAGAR: R$' + total.toFixed(2));
+  $("#result2").val((total * 1.04).toFixed(2));
+}
+
+function contar(){
+    var res = $("input:checkbox");
+    var cont = 0;
+    cont++
+    $("#res").val(cont)
+}
+contar();
+$(":checkbox").click(contar);
+
+somar();
+$(":checkbox").click(somar);
+    </script>
+
+</body>
+</html>

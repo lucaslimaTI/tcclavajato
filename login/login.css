@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.olho {
+    cursor: pointer;
+    left: 25vw;
+    top: -6vh;
+    position: relative;
+    width: 28px;
+    float: left;
+  }
+.container-cadastro{
+    height: 100%;
+    background-color: #230c4d00;
+}
+.card-cadastro{
+    margin-top: 180px;
+    margin-left: 33.4vw;
+    background: linear-gradient(to bottom, #5d44ec00, #9964fd00);
+    width: 25vw;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 58px;
+    padding-right: 88px;
+    display: inline-block;
+    border-radius: 34px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 10px #0d032000;
+    border: 2px solid #6154aa;
+}
+.alinhar-elementos input{
+    margin-top: 30px;
+    padding: 19px;
+    padding-left: 4px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #5d44ec;
+    font-size: 18px;
+}
+.alinhar-elementos input::placeholder{
+ font-size: 18px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 540;
+ color: #666666;
+}
+.alinhar-elementos button{
+    margin-top: 30px;
+    margin-left: 3.4vw;
+    width: 20vw;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid #9055ff;
+    border-radius: 40px;
+    color: #9055ff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+
+
+.alinhar-elementos button:hover{
+    transition: 0.4s;
+    background-color: #9055ff;
+    color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px #4d4d4d;
+
+}
+
+.alinhar-elementos h1{
+    padding-bottom: 15px;
+    color: #51478a;
+    margin-left: 10vw;
+}
+.style-label{
+    display: block;
+    margin-top: 24px;
+    font-weight: 750;
+    color: #5d44ec;
+
+}
+.criar-conta{
+    background-color: #4d4d4d00;
+    margin-top: 50px;
+    font-weight: 700;
+    margin-left: 8.3vw;
+}
+.criar-conta p{
+    color: #575757;
+    display: inline-block;
+}
+.criar-conta a{
+    color: #9962ff;
+    text-decoration: none;
+}
+.criar-conta a:hover{
+    transition: 0.5s;
+    color: #5e14e7;
+}
+
+@media(max-width: 1920px)
+{
+
+    .alinhar-elementos button{
+        margin-top: 30px;
+        margin-left: 1.5vw;
+        width: 20vw;
+        padding: 14px;
+        background: transparent;
+        border: 1px solid #9055ff;
+        border-radius: 40px;
+        color: #9055ff;
+        cursor: pointer;
+        letter-spacing: 2px;
+        font-weight: 800;
+    }
+    .criar-conta{
+        background-color: #4d4d4d00;
+        margin-top: 50px;
+        font-weight: 700;
+        margin-left: 6.4vw;
+    }
+}
+@media(max-width: 1600px)
+{
+
+    .alinhar-elementos button{
+        margin-top: 30px;
+        margin-left: 1.5vw;
+        width: 20vw;
+        padding: 14px;
+        background: transparent;
+        border: 1px solid #9055ff;
+        border-radius: 40px;
+        color: #9055ff;
+        cursor: pointer;
+        letter-spacing: 2px;
+        font-weight: 800;
+    }
+    .criar-conta{
+        background-color: #4d4d4d00;
+        margin-top: 50px;
+        font-weight: 700;
+        margin-left: 5.6vw;
+    }
+}
+@media(max-width: 1366px)
+{
+
+    .alinhar-elementos button{
+        margin-top: 30px;
+        margin-left: 1.1vw;
+        width: 20vw;
+        padding: 14px;
+        background: transparent;
+        border: 1px solid #9055ff;
+        border-radius: 40px;
+        color: #9055ff;
+        cursor: pointer;
+        letter-spacing: 2px;
+        font-weight: 800;
+    }
+    .criar-conta{
+        background-color: #4d4d4d00;
+        margin-top: 50px;
+        font-weight: 700;
+        margin-left: 4.4vw;
+    }
+}
+@media(max-width: 400px)
+{
+
+    .alinhar-elementos button{
+        margin-top: 30px;
+        margin-left: 6.5vw;
+        width:30vw;
+        padding: 14px;
+        background: transparent;
+        border: 1px solid #9055ff;
+        border-radius: 40px;
+        color: #9055ff;
+        cursor: pointer;
+        letter-spacing: 2px;
+        font-weight: 800;
+    }
+    .criar-conta{
+        background-color: #d4b0b000;
+        margin-top: 50px;
+        font-weight: 700;
+        margin-left: 0vw;
+        width: 60vw;
+    }
+    .card-cadastro{
+        margin-top: 180px;
+        margin-left: 6.7vw;
+        background: linear-gradient(to bottom, #5d44ec00, #9964fd00);
+        width: 50vw;
+        padding-left: 50px;
+        padding-top: 40px;
+        padding-bottom: 58px;
+        padding-right: 88px;
+        display: inline-block;
+        border-radius: 34px;
+        margin-bottom: 100px;
+        box-shadow: 0px 0px 10px #0d032000;
+        border: 2px solid #6154aa;
+    }
+    .alinhar-elementos h1{
+        padding-bottom: 15px;
+        color: #51478a;
+        margin-left: 16.4vw;
+    }
+}

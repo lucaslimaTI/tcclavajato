@@ -1,0 +1,57 @@
+<table border="0px" class="table-servicos">
+                        <tr>
+                            <td><img src="../assets/polir farol.jpg"           alt=""  class="img-servicos"></td>
+                            <td><img src="../assets/higienizacao interna.jpg"  alt=""  class="img-servicos"></td>
+                            <td><img src="../assets/limpeza no couro.jpg"      alt=""  class="img-servicos"></td>
+                        </tr>
+                        <tr>
+                            <td>POLIMENTO DO FAROL</td>
+                            <td>HIGIENIZAÇÃO INTERNA</td>
+                            <td>LIMPEZA E HIDRATAÇÃO DO COURO</td>
+                        </tr>
+                        <tr>
+                            <td >processo de limpeza das luzes dianteiras do veículo.
+                                O polimento do farol melhora a eficiência luminosa do automóvel 
+                                e, naturalmente, os deixa com uma estética melhor.
+                            </td>
+                            <td>
+                                Na higienização, costuma-se retirar os componentes internos do veículo 
+                                (como os bancos e carpetes), para que a limpeza seja realmente completa.
+                            </td>
+                            <td>
+                                O hidratante de couro age nas fibras do material, renovando o brilho e deixando 
+                                um aspecto mais limpo, e a sua função é criar uma camada protetora sobre o couro 
+                                para protegê-lo dos efeitos externos
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="espaco-linha"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../assets/limpeza no motor.jpg"  alt=""  class="img-servicos"></td>
+                            <td id="solicitar"><img src="../assets/cristalizacao2.jpg"     alt=""  class="img-servicos"></td>
+                            <td><img src="../assets/limpeza no ar.jpg"     alt=""  class="img-servicos"></td>
+                        </tr>
+                        <tr>
+                            <td>LIMPEZA TECNICA DO MOTOR</td>
+                            <td>CRISTALIZAÇÃO DOS VIDROS</td>
+                            <td>HIGIENIZAÇÃO DO AR CONDICIONADO</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                A limpeza tecnica realiza a limpeza por diversas partes, de diferentes naturezas, como: fios elétricos, 
+                                blocos metálicos, borrachas, velas, ECUs e módulos, acabamentos especiais, etc.
+                            </td>
+                            <td >
+                                A cristalização de vidros produz uma camada protetora e transparente que dá mais visibilidade, 
+                                principalmente nos dias de chuva.
+                            </td>
+                            <td>
+                                A higienização do Ar Condiciona Automotivo elimina o Mau Cheiro, causado por acumulo de bacterias, ácaros, fungos etc.
+                                e essa higienização serve tambem para melhorar o aspecto, e a beleza externa e interna do ar condicionado.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><button class="btn-solicitar-servico" onclick="solicitar_servico();">SOLICITAR SERVIÇO</button></td>
+                        </tr>
+                    </table>

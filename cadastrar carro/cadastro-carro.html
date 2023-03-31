@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro-carro.css">
+    <link rel="icon" type="image/x-icon" href="../assets/logo lava jato 6.jpeg">
+    <title>Cadastrar Carro</title>
+</head>
+<body>
+    <div class="container-cadastro">
+        <div class="card-cadastro">
+            <div class="alinhar-elementos">
+                <h1>CADASTRAR CARRO</h1>
+                <form action="">
+                    <label for="" class="style-label">*TIPO DO VEICULO</label> <br>
+                    <input type="text" required placeholder="Digite aqui:(ex:Carro, Moto etc)"> <br>
+                    <label for=""class="style-label">*MARCA DO VEICULO</label> <br>
+                    <input type="text" required placeholder="Digite aqui:"> <br>
+                    <label for=""class="style-label">*NOME DO VEICULO</label> <br>
+                    <input type="text" required name="" placeholder="Digite aqui:" id=""> <br>
+                    <label for=""class="style-label">*PLACA DO VEICULO</label> <br>
+                    <input type="text" required name="" placeholder="Digite aqui:" id=""> <br>
+                    <br>
+                    <button onclick="finalizarCadastro(); return false;">FINALIZAR CADASTRO</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        function finalizarCadastro(){
+            alert("Cadastro realizado com sucesso!");
+            location.href = "../login/login.html";
+        }
+    </script>
+</body>
+</html>
